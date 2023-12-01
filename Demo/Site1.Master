@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Demo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!--new-->
+
+    <!--bootstrap css-->
+    <link href="bootstrap/CSS/bootstrap.min.css" rel="stylesheet" />
+    <!-- datatables css-->
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--fontawesome css-->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <!--custom css-->
+    <link href="CSS/customstylesheet.css" rel="stylesheet" />
+    <script src="bootstrap/JS/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/JS/popper.min.js"></script>
+    <script src="bootstrap/JS/bootstrap.min.js"></script>
+    <script src="login/js/main.js"></script>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <style>
+        a{
+            font-size:18px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+        <div class="header" id="myHeader" >
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a style="color:#a2a5b9" class="navbar-brand" target="_self" href="homepage.aspx">
+                    <img src="imgs/neural.png" width="45" height="45" />
+                    AlgoPlus
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                 <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul style="color:#a2a5b9"class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a style="color:#a2a5b9" class="nav-link" href="homepage.aspx">&nbsp;Home</a>
+                        </li>
+                       
+
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link abcd" ID="LinkButton6" runat="server" style="color:#a2a5b9" Visible="False" OnClick="LinkButton6_Click">Manage Users</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link abcd" ID="LinkButton7" runat="server" style="color:#a2a5b9" Visible="False" OnClick="LinkButton7_Click" >Pending Problems</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link abcd" ID="LinkButton5" runat="server" style="color:#a2a5b9" OnClick="LinkButton4_Click">Learn/Practice</asp:LinkButton>
+                        </li>
+                        
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link abcd" ID="LinkButton1" runat="server" style="color:#a2a5b9"  OnClick="LinkButton1_Click">Login</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link abcd" ID="LinkButton2" runat="server" style="color:#a2a5b9" Visible="False">Sign Up</asp:LinkButton>
+                        </li>
+                        <li  class="nav-item active">
+                            <asp:LinkButton class="nav-link abcd" ID="LinkButton3" runat="server" style="color:#a2a5b9" Visible="False" OnClick="LinkButton3_Click">Logout</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link abcd" ID="LinkButton4" runat="server" style="color:#a2a5b9" Visible="False" OnClick="LinkButton4_Click1">Hello user</asp:LinkButton>
+                            
+                        </li>
+                    </ul>
+                </div>
+
+
+            </nav>
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+        </form>
+        <!-- Main Content Placeholder -->
+        
+        <!-- Main Content Placeholder -->
+        <!-- Footer -->
+        <footer>
+            <div style="background:#242d3c"id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <h6 style="color:whitesmoke">&copy All right Reserved by <a class="footerlinks" href="https://www.facebook.com/parvejmia009" target="_blank">Parvej Mia</a></h6>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ./Footer -->
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿.footerlinks {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+.footerlinks:hover {
+        color: skyblue;
+ }
+
+#footer1 {
+    background: #3b4963;
+}
+
+#footer2 {
+    background: #242d3c;
+}
+.header {
+    background-color: #242d3c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.abcd {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+.background-color:hover {
+    color: red;
+}
